@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const gothicRegular = localFont({
+  src: "../public/fonts/GOTHIC.ttf",
+  variable: "--font-gothic-regular",
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const gothicBold = localFont({
+  src: "../public/fonts/gothicb.ttf",
+  variable: "--font-gothic-bold",
+  weight: "700",
+});
+
+const gothicItalic = localFont({
+  src: "../public/fonts/gothici.ttf",
+  variable: "--font-gothic-italic",
+  weight: "400",
+  style: "italic",
 });
 
 export const metadata: Metadata = {
@@ -23,9 +32,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${gothicRegular.variable} ${gothicBold.variable} ${gothicItalic.variable} antialiased`}
+        style={{ fontFamily: "var(--font-gothic-regular)" }}
       >
         {children}
       </body>
