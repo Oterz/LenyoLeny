@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/tailwind.css";
 import { Layout } from "@/components/layout/Loyout";
+import { YandexMetrika } from "@/components/YandexMetrika";
 
 const gothicRegular = localFont({
   src: "../public/fonts/GOTHIC.ttf",
@@ -38,6 +39,7 @@ export default function RootLayout({
         className={`${gothicRegular.variable} ${gothicBold.variable} ${gothicItalic.variable} antialiased`}
         style={{ fontFamily: "var(--font-gothic-regular)" }}
       >
+        <YandexMetrika />
         <Layout>{children}</Layout>
       </body>
     </html>
