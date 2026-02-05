@@ -9,13 +9,14 @@ export const metadata: Metadata = {
   description:
     "Частные мероприятия, закрытые клубные форматы, арт-ивенты, конференции, корпоративные события, тимбилдинги и подарочные проекты",
   openGraph: {
-    title: "Скоро что-то будет",
-    description: "Следите за обновлениями",
+    title: "LenyOLeny - Мы просто делаем",
+    description: "Частные мероприятия, закрытые клубные форматы, арт-ивенты, конференции, корпоративные события, тимбилдинги и подарочные проекты",
     type: "website",
     locale: "ru_RU",
+    url: "https://lenyoleny.ru",
     images: [
       {
-        url: "/og-home.jpg",
+        url: "https://lenyoleny.ru/og-home.jpg",
         width: 1200,
         height: 630,
         alt: "LenyOLeny",
