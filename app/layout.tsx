@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "@/styles/tailwind.css";
+import { Layout } from "@/components/layout/Loyout";
 
 const gothicRegular = localFont({
   src: "../public/fonts/GOTHIC.ttf",
@@ -37,7 +38,7 @@ export default function RootLayout({
         className={`${gothicRegular.variable} ${gothicBold.variable} ${gothicItalic.variable} antialiased`}
         style={{ fontFamily: "var(--font-gothic-regular)" }}
       >
-        {children}
+        <Layout>{children}</Layout>
       </body>
     </html>
   );

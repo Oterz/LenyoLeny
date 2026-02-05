@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Цветовая палитра геометрического паттерна */
+  --color-deep-brown: hsl(12, 43%, 17%);
+  --color-rich-orange: hsl(24, 100%, 41%);
+  --color-bright-orange: hsl(28, 80%, 52%);
+  --color-light-beige: hsl(180, 33%, 99%);
+  --color-terracotta: hsl(24, 100%, 31%);
+
+  /* Tailwind цвета */
+  --color-pattern-bg: var(--color-deep-brown);
+  --color-pattern-primary: var(--color-rich-orange);
+  --color-pattern-accent: var(--color-bright-orange);
+  --color-pattern-light: var(--color-light-beige);
+  --color-pattern-shadow: var(--color-terracotta);
+}
